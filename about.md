@@ -3,27 +3,104 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+Hey there! This page will tell you about me, and therefore also act like a CV/resume.
 
-In the novel, _The Strange Case of Dr. Jekyll and Mr. Hyde_, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I'm Swiss and currently studying [Business IT](https://www.fhnw.ch/en/degree-programmes/business/bsc-in-business-information-technology) at the [Fachhochschule Nordwestschweiz](https://www.fhnw.ch/en).
 
-There are currently two themes built on Poole:
+- toc
+{: toc }
 
--   [Hyde](https://hyde.getpoole.com)
--   [Lanyon](https://lanyon.getpoole.com)
+## Timeline
 
-Learn more and contribute on [GitHub](https://github.com/poole).
+{% assign steps = site.steps | sort: 'date' | reverse %}
+{% for step in steps %}
 
-## Setup
+<div class="item">
+    <i class="vertical-line"></i>
+    <h2 class="item-date">{{ step.date | date: '%m/%Y' }}{% if step.enddate %} - {{ step.enddate | date: '%m/%Y' }}{% endif %}</h2>
+    <div class="card-panel">
+        <h3 class="card-title">
+            {{ step.title }}
+        </h3>
+        <p>
+            {{ step.content }}
+        </p>
+    </div>
+</div>
+{% endfor %}
+<div class="last-item">
+    <i class="vertical-line"></i>
+</div>
+<br>
+<br>
 
-Some fun facts about the setup of this project include:
+## Hobbies
 
--   Built for [Jekyll](https://jekyllrb.com)
--   Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
--   Coded with [Atom](https://atom.io), an amazing open source code editor
+* Programming
+* Hang out with friends
+* ANIME (Watch TV)
 
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
+## Qualifications
+
+Basic: 🌟
+Standard: 🌟🌟
+Good: 🌟🌟🌟
+Expert: 🌟🌟🌟🌟
+
+| Lanugage | Verbal   | Written  | Info/Certificate |
+| -------- | -------- | -------- | ---------------- |
+| Spanish  | 🌟       | 🌟🌟🌟   |                  |
+| German   | 🌟🌟🌟🌟 | 🌟🌟🌟🌟 | Native language  |
+| French   | 🌟🌟     | 🌟🌟     | 📜 DELF B1       |
+| English  | 🌟🌟🌟   | 🌟🌟🌟   | 📜 CAE C1        |
+| Italian  | 🌟       | 🌟       |                  |
+
+I will hand out the certificates on request. Please contact me over [email](mailto:manuele.vaccari@gmail.com)
+
+| Programs             | Knowledge |
+| -------------------- | --------- |
+| Microsoft Word       | 🌟🌟🌟🌟  |
+| Microsoft Excel      | 🌟🌟🌟🌟  |
+| Microsoft PowerPoint | 🌟🌟🌟🌟  |
+| Nexus Hospis         | 🌟🌟🌟    |
+| JetBrains PhpStorm   | 🌟🌟🌟🌟  |
+| JetBrains IntelliJ   | 🌟🌟🌟    |
+| Microsoft VS Code    | 🌟🌟      |
+
+| Operating System | Knowledge |
+| ---------------- | --------- |
+| Ubuntu           | 🌟🌟      |
+| Windows          | 🌟🌟🌟    |
+
+| Databases | Knowledge |
+| --------- | --------- |
+| MySQL     | 🌟🌟🌟    |
+
+| Programming languages | Knowledge |
+| --------------------- | --------- |
+| HTML                  | 🌟🌟🌟🌟  |
+| CSS                   | 🌟🌟      |
+| JavaScript            | 🌟🌟      |
+| PHP (& OOP)           | 🌟🌟🌟🌟  |
+| Twig                  | 🌟🌟🌟🌟  |
+| SQL                   | 🌟🌟      |
+| Java                  | 🌟🌟      |
+
+| Version Source Control | Knowledge |
+| ---------------------- | --------- |
+| Git                    | 🌟🌟🌟    |
+
+| Other                    |                          |
+| ------------------------ | ------------------------ |
+| Requirements Engineering | 📜 IREB Foundation Level |
+| SAP S/4HANA (TS410) ERP  | 📜 erp4students          |
+
+For the current list or software projects, please refer to my [Github page](https://github.com/D3strukt0r?tab=repositories)
+
+## Other profiles
+
+* [LinkedIn](https://www.linkedin.com/in/manuele-vaccari/)
+* [Xing](https://www.xing.com/profile/Manuele_Vaccari/cv)
+* [Github](https://github.com/D3strukt0r)
 
 Thanks for reading!

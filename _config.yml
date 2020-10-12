@@ -35,10 +35,10 @@ permalink: pretty
 # Build settings
 # theme: minima
 plugins:
+  - jekyll-feed
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
-#   - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -49,9 +49,10 @@ plugins:
 # their entries' file path in the `include:` list.
 #
 exclude:
+  - .git
   - .sass-cache/
   - .jekyll-cache/
-  - .git
+  - .vscode
   - gemfiles/
   - Gemfile
   - Gemfile.lock
@@ -89,3 +90,8 @@ nav:
 
   - title: About
     url: /about
+
+collections:
+  steps:
+    title: Steps
+    output: false
