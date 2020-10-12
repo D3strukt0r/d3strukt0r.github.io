@@ -3,9 +3,15 @@ layout: page
 title: About
 ---
 
-Hey there! This page will tell you about me, and therefore also act like a CV/resume.
+<div class="split-image-text">
+    <img src="{{ "/assets/img/profile-picture-2018.06.23.jpg" | relative_url }}" alt="Profile picture" class="img profile-picture" />
 
-I'm Swiss and currently studying [Business IT](https://www.fhnw.ch/en/degree-programmes/business/bsc-in-business-information-technology) at the [Fachhochschule Nordwestschweiz](https://www.fhnw.ch/en).
+    <p>
+    Hey there! This page will tell you about me, and therefore also act like a CV/resume.
+
+    I'm Swiss and currently studying <a href="https://www.fhnw.ch/en/degree-programmes/business/bsc-in-business-information-technology">Business IT</a> at the <a href="https://www.fhnw.ch/en">Fachhochschule Nordwestschweiz</a>.
+    </p>
+</div>
 
 - toc
 {: toc }

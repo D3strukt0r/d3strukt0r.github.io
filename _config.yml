@@ -91,6 +91,12 @@ nav:
   - title: About
     url: /about
 
+defaults:
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
+
 collections:
   steps:
     title: Steps
