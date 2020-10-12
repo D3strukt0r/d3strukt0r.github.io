@@ -61,7 +61,7 @@ Expert: 🌟🌟🌟🌟
 | English  | 🌟🌟🌟   | 🌟🌟🌟   | 📜 CAE C1        |
 | Italian  | 🌟       | 🌟       |                  |
 
-I will hand out the certificates on request. Please contact me over [email](mailto:manuele.vaccari@gmail.com)
+I will hand out the certificates on request. Please contact me over [email](mailto:{{ site.author.email }})
 
 | Programs             | Knowledge |
 | -------------------- | --------- |
@@ -101,7 +101,7 @@ I will hand out the certificates on request. Please contact me over [email](mail
 | Requirements Engineering | 📜 IREB Foundation Level |
 | SAP S/4HANA (TS410) ERP  | 📜 erp4students          |
 
-For the current list or software projects, please refer to my [Github page](https://github.com/D3strukt0r?tab=repositories)
+For the current list or software projects, please refer to my [Github page]({{ site.author.github_username }}?tab=repositories)
 
 ## Other profiles
 
