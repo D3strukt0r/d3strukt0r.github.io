@@ -33,6 +33,10 @@ trim_trailing_whitespace = true
 # Trailing whitespace means manual linebreaks in Markdown thus is not trimmable
 trim_trailing_whitespace = false
 
+## YAML specific settings ##
+[*.{yml,yaml}]
+indent_size = 2
+
 ## Git specific settings ##
 # Avoid git patch fail to apply due to the stripped unmodified lines that contains only spaces, which also matches as "trailing spaces"
 [.git/**]
