@@ -55,7 +55,7 @@ Expert: 🌟🌟🌟🌟
 
 | Lanugage | Verbal   | Written  | Info/Certificate |
 | -------- | -------- | -------- | ---------------- |
-| Spanish  | 🌟       | 🌟🌟🌟   |                  |
+| Spanish  | 🌟🌟🌟   | 🌟      |                  |
 | German   | 🌟🌟🌟🌟 | 🌟🌟🌟🌟 | Native language  |
 | French   | 🌟🌟     | 🌟🌟     | 📜 DELF B1       |
 | English  | 🌟🌟🌟   | 🌟🌟🌟   | 📜 CAE C1        |
