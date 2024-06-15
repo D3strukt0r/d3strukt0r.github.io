@@ -14,4 +14,6 @@ updates:
       - "D3strukt0r"
     schedule:
       interval: "daily"
+      time: "08:00"
+      timezone: "Europe/Zurich"
 
