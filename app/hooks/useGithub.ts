@@ -45,7 +45,7 @@ export function useGithubUser(user = 'D3strukt0r') {
     const key = `gh:user:${user}`;
     const cached = fromCache<GhUser>(key);
     if (cached) {
-      // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect -- async fetch + sessionStorage cache; state must update post-mount
+      // eslint-disable-next-line react/set-state-in-effect -- async fetch + sessionStorage cache; state must update post-mount
       setData(cached);
       return;
     }
@@ -77,7 +77,7 @@ export function useGithubRepos(user = 'D3strukt0r') {
     const key = `gh:repos:v2:${user}`;
     const cached = fromCache<GhReposResult>(key);
     if (cached) {
-      // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect -- async fetch + sessionStorage cache; state must update post-mount
+      // eslint-disable-next-line react/set-state-in-effect -- async fetch + sessionStorage cache; state must update post-mount
       setRepos(cached);
       return;
     }
@@ -120,7 +120,7 @@ export function useContributions(user = 'D3strukt0r') {
     const key = `gh:contrib:v3:${user}`;
     const cached = fromCache<GhContrib>(key);
     if (cached) {
-      // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect -- async fetch + sessionStorage cache; state must update post-mount
+      // eslint-disable-next-line react/set-state-in-effect -- async fetch + sessionStorage cache; state must update post-mount
       setData(cached);
       return;
     }

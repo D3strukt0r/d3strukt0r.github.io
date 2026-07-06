@@ -14,7 +14,6 @@ import {loadPosts} from './app/vite/plugins/posts';
 import {robots} from './app/vite/plugins/robots';
 import {seal} from './app/vite/plugins/seal';
 import {sitemap} from './app/vite/plugins/sitemap';
-import {spaFallback} from './app/vite/plugins/spa-fallback';
 import {webManifest} from './app/vite/plugins/web-manifest';
 import {yaml} from './app/vite/plugins/yaml';
 
@@ -128,11 +127,6 @@ export default defineConfig({
           atom({siteUrl: SITE_URL, posts: blogPosts, author: {name: 'Manuele', email: 'gh-contact@d3st.dev'}}),
         ]
       : []),
-    // Reads build/client from the resolved Vite config (no outDir passed).
-    // react-router writes build/client/index.html during the SSR build pass,
-    // after the client env's closeBundle; running on both envs lets the copy
-    // succeed on the SSR pass.
-    spaFallback(),
   ],
   resolve: {
     tsconfigPaths: true,

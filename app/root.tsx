@@ -114,7 +114,7 @@ export function Layout({children}: {children: React.ReactNode}) {
         {/* Must run before <Links /> so the theme class is on <html> before any
             stylesheet evaluates — that's what prevents the FOUC. */}
         <script
-          // eslint-disable-next-line react-dom/no-dangerously-set-innerhtml -- themeBootstrap is a constant string defined above; no user input, no escaping needed
+          // eslint-disable-next-line react/dom-no-dangerously-set-innerhtml -- themeBootstrap is a constant string defined above; no user input, no escaping needed
           dangerouslySetInnerHTML={{__html: themeBootstrap}}
         />
         <Meta />
@@ -157,7 +157,7 @@ export default function App() {
       // localStorage may throw in private mode / sandboxed contexts; ignore.
     }
     // Mount-only: reconcile once, then leave language to user actions.
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react/exhaustive-deps
   }, []);
   useEffect(() => {
     if (!loc.hash) {

@@ -47,7 +47,7 @@ export function TaNav() {
   };
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect -- nav glass intensity driven by scroll position; must update via state
+    // eslint-disable-next-line react/set-state-in-effect -- nav glass intensity driven by scroll position; must update via state
     const h = () => setScrolled(window.scrollY > 16);
     h();
     window.addEventListener('scroll', h, {passive: true});
@@ -55,7 +55,7 @@ export function TaNav() {
   }, []);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect -- close menu when route changes
+    // eslint-disable-next-line react/set-state-in-effect -- close menu when route changes
     setOpen(false);
   }, [loc.pathname, loc.hash]);
 

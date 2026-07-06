@@ -60,7 +60,7 @@ export default function Post() {
         </div>
 
         <Card glass className="p-8">
-          {/* eslint-disable-next-line react-dom/no-dangerously-set-innerhtml -- post HTML is generated at build time from trusted markdown sources */}
+          {/* eslint-disable-next-line react/dom-no-dangerously-set-innerhtml -- post HTML is generated at build time from trusted markdown sources */}
           <article ref={articleRef} className="ta-content" dangerouslySetInnerHTML={{__html: post.html}} />
         </Card>
 

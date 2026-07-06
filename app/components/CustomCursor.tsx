@@ -7,7 +7,7 @@ export function CustomCursor() {
 
   useEffect(() => {
     const mq = window.matchMedia('(hover: hover) and (pointer: fine)');
-    // eslint-disable-next-line react-hooks-extra/no-direct-set-state-in-use-effect -- matchMedia is browser-only, must read after mount
+    // eslint-disable-next-line react/set-state-in-effect -- matchMedia is browser-only, must read after mount
     setEnabled(mq.matches);
     const h = (e: MediaQueryListEvent) => setEnabled(e.matches);
     mq.addEventListener?.('change', h);

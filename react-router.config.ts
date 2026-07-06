@@ -1,4 +1,6 @@
 import type {Config} from '@react-router/dev/config';
+import {copyFileSync, existsSync} from 'node:fs';
+import {join} from 'node:path';
 import process from 'node:process';
 
 // Router basename, derived from BASE_PATH (set by deploy-gh-pages.yml) and
@@ -18,4 +20,13 @@ export default {
   // sub-path build (custom domain disabled → project site at /<repo>/). RR
   // wants no trailing slash; Vite `base` keeps it.
   basename: BASENAME,
+  // Emit the SPA-fallback 404.html (a verbatim copy of index.html). Runs in
+  // React Router's post-build hook because RR writes the SPA index.html AFTER
+  // every Vite hook, so a Vite plugin can't see it on RR8. No-op for SSR builds.
+  async buildEnd() {
+    const index = join(process.cwd(), 'build', 'client', 'index.html');
+    if (existsSync(index)) {
+      copyFileSync(index, join(process.cwd(), 'build', 'client', '404.html'));
+    }
+  },
 } satisfies Config;
