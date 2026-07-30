@@ -21,7 +21,6 @@
   ],
   "compilerOptions": {
     "types": ["node", "vite/client"],
-    "baseUrl": ".",
     "paths": {
       "~/*": ["./app/*"]
     },
